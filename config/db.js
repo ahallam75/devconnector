@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const config = require("config");
+const keys = require("../../config/keys");
 const db = config.get("mongoURI");
 
 const connectDB = async () => {
