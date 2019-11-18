@@ -64,12 +64,17 @@ const PostItem = ({
   </div>
 );
 
+PostItem.defaultProps = {
+  showActions: true
+};
+
 PostItem.propTypes = {
   post: PropTypes.object.isRequired,
   auth: PropTypes.object.isRequired,
   addLike: PropTypes.func.isRequired,
   removeLike: PropTypes.func.isRequired,
-  deletePost: PropTypes.func.isRequired
+  deletePost: PropTypes.func.isRequired,
+  showActions: PropTypes.bool
 };
 
 const mapStateToProps = state => ({
